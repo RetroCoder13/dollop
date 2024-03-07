@@ -157,3 +157,13 @@ OUT IN
 ```
 VAR input IN
 ```
+
+### Input two numbers and add them
+```
+OUT Input the first number
+VAR a IN
+OUT Input the second number
+VAR b IN
+OUT Those values added together gives you
+OUT ADD a b
+```
