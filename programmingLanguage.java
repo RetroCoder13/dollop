@@ -19,6 +19,12 @@ public class programmingLanguage {
         if(input[0].equals("OUT")){
             if(input[1].equals("ADD") || input[1].equals("SUB") || input[1].equals("MUL") || input[1].equals("DIV") || input[1].equals("POW")){
                 function_out(Double.toString(function_numbers(input[2], input[3], input[1], variables)), variables);
+            } else if(input[1].equals("AND") || input[1].equals("OR") || input[1].equals("NOT") || input[1].equals("EQL")){
+                if(input[1].equals("NOT")){
+                    function_out(Boolean.toString(function_compare(input[2], "false", input[1], variables)), variables);
+                } else {
+                    function_out(Boolean.toString(function_compare(input[2], input[3], input[1], variables)), variables);
+                }
             } else {
                 for(int i=0;i<input.length-1;i++){
                     function_out(input[i+1], variables);
