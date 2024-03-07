@@ -2,6 +2,24 @@
 My own simple programming language written in Java for DofE
 
 ## Documentation
+- [OUT function](#out-function)
+- [IN function](#in-function)
+- [VAR function](#var-function)
+- [Number functions](#number-functions)
+  - [ADD](#add-function)
+  - [SUB](#sub-function)
+  - [MUL](#mul-function)
+  - [DIV](#div-function)
+  - [POW](#pow-function)
+- [RUN function](#run-function)
+- [EXT function](#ext-function)
+- [IF function](#if-function)
+  - [AND](#and-function)
+  - [OR](#or-function)
+  - [NOT](#not-function)
+  - [EQL](#eql-function)
+- [Example Code](#example-code)
+
 ### OUT function
 The OUT function outputs data to the terminal\
 If the text is a variable name, it will output the variable value instead
@@ -34,7 +52,7 @@ VAR c ADD a b
 
 ### Number functions
 These are all useless unless saved to a variable or output
-#### ADD
+#### ADD function
 The ADD function adds two numbers\
 It can add a mixture of variables and numbers
 ```
@@ -44,7 +62,7 @@ OUT ADD 1 2
 OUT ADD variable 1
 ```
 
-#### SUB
+#### SUB function
 The SUB function subtracts two numbers\
 It can subtract a mixture of variables and numbers
 ```
@@ -54,7 +72,7 @@ OUT SUB 1 2
 OUT SUB variable 1
 ```
 
-#### MUL
+#### MUL function
 The MUL function multiplies two numbers\
 It can multiply a mixture of variables and numbers
 ```
@@ -64,7 +82,7 @@ OUT MUL 1 2
 OUT MUL variable 1
 ```
 
-#### DIV
+#### DIV function
 The DIV function divides two numbers\
 It can divide a mixture of variables and numbers
 ```
@@ -74,7 +92,7 @@ OUT DIV 1 2
 OUT DIV variable 1
 ```
 
-#### POW
+#### POW function
 The POW function returns a number to the power of another\
 It raises the first value to the power of the second\
 It can do this to a mixture of variables and numbers
