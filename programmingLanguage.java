@@ -9,6 +9,10 @@ public class programmingLanguage {
         String[] input;
         HashMap<String,String> variables = new HashMap<String,String>();
 
+        if(args.length != 0){
+            function_run(args[0], variables);
+        }
+
         while(true){
             input = System.console().readLine().split(" ");
             function(input, variables);
