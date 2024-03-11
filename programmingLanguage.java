@@ -83,6 +83,7 @@ public class programmingLanguage {
                 scanner.close();
             } catch(FileNotFoundException e) {}
         }
+        lineNumber = 0;
     }
 
     public static void function_out(String output, HashMap<String,String> variables){
