@@ -5,5 +5,6 @@ VAR b IN
 OUT Those values added together gives you
 VAR output ADD a b
 OUT output
-IF EQL output 2.0 GO 1
+VAR line 1
+IF EQL output 2.0 GO line
 EXT

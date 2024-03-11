@@ -18,6 +18,7 @@ My own simple programming language written in Java for DofE
   - [OR](#or-function)
   - [NOT](#not-function)
   - [EQL](#eql-function)
+- [GO function](#go-function)
 - [Example Code](#example-code)
 
 ### OUT function
@@ -143,6 +144,12 @@ IF NOT false OUT This code will run
 This checks if two values are equal
 ```
 IF EQL 1 1 OUT This code will run
+```
+
+### GO function
+The GO function takes you back to a specific line number
+```
+GO 1
 ```
 
 ## Example code

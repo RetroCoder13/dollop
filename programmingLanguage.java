@@ -64,7 +64,7 @@ public class programmingLanguage {
         }
 
         if(input[0].equals("GO")){
-            function_go(input[1]);
+            function_go(input[1], variables);
         }
     }
 
@@ -244,7 +244,11 @@ public class programmingLanguage {
         };
     }
 
-    public static void function_go(String newLine){
-        lineNumber = Integer.parseInt(newLine)-2;
+    public static void function_go(String newLine, HashMap<String,String> variables){
+        if(variables.keySet().contains(newLine)){
+            lineNumber = Integer.parseInt(variables.get(newLine))-2;
+        } else {
+            lineNumber = Integer.parseInt(newLine)-2;
+        }
     }
 }
