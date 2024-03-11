@@ -3,4 +3,7 @@ VAR a IN
 OUT Input the second number
 VAR b IN
 OUT Those values added together gives you
-OUT ADD a b
+VAR output ADD a b
+OUT output
+IF EQL output 2.0 GO 1
+EXT

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class programmingLanguage {
+    public static int lineNumber = 0;
     public static void main(String args[]){
         String[] input;
         HashMap<String,String> variables = new HashMap<String,String>();
@@ -61,18 +62,25 @@ public class programmingLanguage {
                 function_if(input[2], input[3], input[1], Arrays.copyOfRange(input, 4, input.length), variables);
             }
         }
+
+        if(input[0].equals("GO")){
+            function_go(input[1]);
+        }
     }
 
     public static void function_run(String path, HashMap<String,String> variables){
         File file = new File(path);
         if(file.exists()){
             try{
-                Scanner fileRead = new Scanner(file);
-                while(fileRead.hasNextLine()){
-                    String[] input = fileRead.nextLine().split(" ");
+                Scanner scanner = new Scanner(file);
+                scanner.useDelimiter("\\Z");
+                String[] fileRead = scanner.next().split("\n");
+                while(lineNumber <= fileRead.length-1){
+                    String[] input = fileRead[lineNumber].split(" ");
                     function(input, variables);
+                    lineNumber++;
                 }
-                fileRead.close();
+                scanner.close();
             } catch(FileNotFoundException e) {}
         }
     }
@@ -233,5 +241,9 @@ public class programmingLanguage {
         if(function_compare(a, b, operation, variables)){
             function(output, variables);
         };
+    }
+
+    public static void function_go(String newLine){
+        lineNumber = Integer.parseInt(newLine)-2;
     }
 }
