@@ -26,6 +26,9 @@ My own simple programming language written in Java for DofE
 The OUT function outputs data to the terminal\
 If the text is a variable name, it will output the variable value instead
 ```
+OUT value
+```
+```
 OUT Hello World
 ```
 ```
@@ -63,6 +66,9 @@ These are all useless unless saved to a variable or output
 The ADD function adds two numbers\
 It can add a mixture of variables and numbers
 ```
+OUT ADD value value
+```
+```
 OUT ADD 1 2
 ```
 ```
@@ -72,6 +78,9 @@ OUT ADD variable 1
 #### SUB function
 The SUB function subtracts two numbers\
 It can subtract a mixture of variables and numbers
+```
+OUT SUB value value
+```
 ```
 OUT SUB 1 2
 ```
@@ -83,6 +92,9 @@ OUT SUB variable 1
 The MUL function multiplies two numbers\
 It can multiply a mixture of variables and numbers
 ```
+OUT MUL value value
+```
+```
 OUT MUL 1 2
 ```
 ```
@@ -92,6 +104,9 @@ OUT MUL variable 1
 #### DIV function
 The DIV function divides two numbers\
 It can divide a mixture of variables and numbers
+```
+OUT DIV value value
+```
 ```
 OUT DIV 1 2
 ```
@@ -104,6 +119,9 @@ The POW function returns a number to the power of another\
 It raises the first value to the power of the second\
 It can do this to a mixture of variables and numbers
 ```
+OUT POW value value
+```
+```
 OUT POW 1 2
 ```
 ```
@@ -112,6 +130,9 @@ OUT POW variable 1
 
 ### RUN function
 The RUN function loads a file and runs the code inside it
+```
+RUN value
+```
 ```
 RUN program.txt
 ```
@@ -127,9 +148,18 @@ The IF function will only run the code that comes after it if the parameters are
 Other functions are included like AND, OR, NOT and EQL to allow you to run the IF function\
 AND, OR and NOT only take boolean values or variables with boolean values\
 EQL can take any value including variables
+```
+IF comparison_function value value code
+```
+```
+IF comparison_function value code
+```
 
 #### AND function
 This checks between two boolean values
+```
+IF AND value value code
+```
 ```
 IF AND true true OUT This code will run
 ```
@@ -137,11 +167,17 @@ IF AND true true OUT This code will run
 #### OR function
 This checks between two boolean values
 ```
+IF OR value value code
+```
+```
 IF OR true false OUT This code will run
 ```
 
 #### NOT function
 This checks one boolean value
+```
+IF NOT value code
+```
 ```
 IF NOT false OUT This code will run
 ```
@@ -149,11 +185,17 @@ IF NOT false OUT This code will run
 #### EQL function
 This checks if two values are equal
 ```
+IF EQL value value code
+```
+```
 IF EQL 1 1 OUT This code will run
 ```
 
 ### GO function
 The GO function takes you back to a specific line number
+```
+GO value
+```
 ```
 GO 1
 ```
