@@ -1,4 +1,6 @@
+OUT This will loop until you enter 10
 VAR number IN
-IF EQL number 10 GO 4
-GO 1
+IF EQL number 10 GO 5
+GO 2
+OUT You entered 10
 EXT

@@ -203,9 +203,11 @@ GO 1
 ### Looping
 To loop you need to include an IF statement that continues and a GO statement to go back to the beginning of the loop.
 ```
+OUT This will loop until you enter 10
 VAR number IN
-IF EQL number 10 GO 4
-GO 1
+IF EQL number 10 GO 5
+GO 2
+OUT You entered 10
 EXT
 ```
 In this example, if the input equals 10, it skips forwards and ends the program\
