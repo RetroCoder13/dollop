@@ -42,10 +42,12 @@ public class programmingLanguage {
         }
 
         if(input[0].equals("VAR")){
-            if(input[2].equals("ADD") || input[2].equals("SUB") || input[2].equals("MUL") || input[2].equals("DIV") || input[2].equals("POW")){
-                function_var(input[1], Double.toString(function_numbers(input[3], input[4], input[2], variables)), variables);
-            } else {
-                function_var(input[1], input[2], variables);
+            if(!(input[1].equals(input[1].toUpperCase()) && variables.get(input[1]) != null)){
+                if(input[2].equals("ADD") || input[2].equals("SUB") || input[2].equals("MUL") || input[2].equals("DIV") || input[2].equals("POW")){
+                    function_var(input[1], Double.toString(function_numbers(input[3], input[4], input[2], variables)), variables);
+                } else {
+                    function_var(input[1], input[2], variables);
+                }
             }
         }
 
