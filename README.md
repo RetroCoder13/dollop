@@ -19,6 +19,7 @@ My own simple programming language written in Java for DofE
   - [NOT](#not-function)
   - [EQL](#eql-function)
 - [GO function](#go-function)
+- [Looping](#looping)
 - [Example Code](#example-code)
 
 ### OUT function
@@ -151,6 +152,17 @@ The GO function takes you back to a specific line number
 ```
 GO 1
 ```
+
+### Looping
+To loop you need to include an IF statement that continues and a GO statement to go back to the beginning of the loop.
+```
+VAR number IN
+IF EQL number 10 GO 4
+GO 1
+EXT
+```
+In this example, if the input equals 10, it skips forwards and ends the program\
+However, if this is not true, the program then goes back to the beginning of the loop
 
 ## Example code
 ### Add two numbers
