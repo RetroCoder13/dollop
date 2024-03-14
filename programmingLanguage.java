@@ -9,6 +9,8 @@ public class programmingLanguage {
     public static void main(String args[]){
         String[] input;
         HashMap<String,String> variables = new HashMap<String,String>();
+        variables.put("PI",Double.toString(Math.PI));
+        variables.put("E",Double.toString(Math.E));
 
         if(args.length != 0){
             function_run(args[0], variables);
