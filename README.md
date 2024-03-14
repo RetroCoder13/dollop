@@ -51,6 +51,11 @@ VAR variable value
 ```
 VAR c ADD a b
 ```
+Constants are defined with an all caps variable name\
+They cannot be changed after they have been defined
+```
+VAR CONSTANT value
+```
 
 ### Number functions
 These are all useless unless saved to a variable or output
