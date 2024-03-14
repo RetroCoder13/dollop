@@ -1,0 +1,4 @@
+VAR number IN
+IF EQL number 10 GO 4
+GO 1
+EXT
