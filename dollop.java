@@ -95,7 +95,7 @@ public class dollop {
             System.out.print(variables.get(output));
         } else if(output.equals("IN")){
             System.out.print(function_in());
-        } else {
+        } else if (output.equals("\\n")){} else {
             System.out.print(output);
         }
     }
