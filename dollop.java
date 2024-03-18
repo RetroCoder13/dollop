@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class programmingLanguage {
+public class dollop {
     public static int lineNumber = 0;
     public static void main(String args[]){
         String[] input;

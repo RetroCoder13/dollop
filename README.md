@@ -1,4 +1,4 @@
-# java-programming-language
+# Dollop
 My own simple programming language written in Java for DofE
 
 ## Documentation
