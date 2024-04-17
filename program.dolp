@@ -4,7 +4,7 @@ OUT Input the second number
 VAR b IN
 OUT Those values added together gives you
 VAR output ADD a b
-OUT output
+OUT {output}
 VAR line 1
 IF EQL output 2.0 GO line
 EXT

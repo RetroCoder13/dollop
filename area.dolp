@@ -1,0 +1,7 @@
+OUT Input the base of the rectangle
+VAR base IN
+OUT input the height of the rectangle
+VAR height IN
+
+VAR area MUL base height
+OUT area: {area}

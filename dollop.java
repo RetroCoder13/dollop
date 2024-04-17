@@ -91,8 +91,8 @@ public class dollop {
     }
 
     public static void function_out(String output, HashMap<String,String> variables){
-        if(variables.keySet().contains(output)){
-            System.out.print(variables.get(output));
+        if(Character.toString(output.charAt(0)).equals("{") && Character.toString(output.charAt(output.length()-1)).equals("}") && variables.keySet().contains(output.substring(1, output.length()-1))){
+            System.out.print(variables.get(output.substring(1, output.length()-1)));
         } else if(output.equals("IN")){
             System.out.print(function_in());
         } else if (output.equals("\\n")){} else {

@@ -24,7 +24,7 @@ My own simple programming language written in Java for DofE
 
 ### OUT function
 The OUT function outputs data to the terminal\
-If the text is a variable name, it will output the variable value instead
+If the text is a variable name and is enclosed with {}, it will output the variable value instead
 ```
 OUT value
 ```
@@ -32,7 +32,7 @@ OUT value
 OUT Hello World
 ```
 ```
-OUT variable
+OUT {variable}
 ```
 
 ### IN function
@@ -226,7 +226,7 @@ VAR score 10
 
 ### Output variable (if declared)
 ```
-OUT score
+OUT {score}
 ```
 
 ### Output text (if not a variable)
