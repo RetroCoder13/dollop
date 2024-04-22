@@ -1,0 +1,37 @@
+VAR score 0
+GO 7
+OUT \n
+OUT Your score: {score}
+EXT
+
+OUT \n
+OUT What is the capital city of England?
+OUT 1. Paris
+OUT 2. London
+OUT 3. Barcelona
+OUT 4. Washington
+VAR answer IN
+IF EQL answer 2 VAR score ADD score 1
+IF EQL answer 2 GO 18
+GO 3
+
+OUT \n
+OUT What is the capital city of France?
+OUT 1. Paris
+OUT 2. London
+OUT 3. Barcelona
+OUT 4. Washington
+VAR answer IN
+IF EQL answer 1 VAR score ADD score 1
+IF EQL answer 1 GO 29
+GO 3
+
+OUT \n
+OUT What is the capital city of Spain?
+OUT 1. Paris
+OUT 2. London
+OUT 3. Barcelona
+OUT 4. Madrid
+VAR answer IN
+IF EQL answer 4 VAR score ADD score 1
+GO 3
