@@ -266,6 +266,7 @@ IF EQL symb + OUT ADD num1 num2
 IF EQL symb - OUT SUB num1 num2
 IF EQL symb * OUT MUL num1 num2
 IF EQL symb / OUT DIV num1 num2
+IF EQL symb ^ OUT POW num1 num2
 OUT \n
 GO 1
 ```
