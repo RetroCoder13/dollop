@@ -1,6 +1,12 @@
 # Dollop
 My own simple programming language written in Java for DofE
 
+To run the program, run the following command:
+```java -jar dollop.jar```
+
+If you want to run a specific file run the following command:
+```java -jar dollop.jar <filepath>```
+
 ## Documentation
 - [OUT function](#out-function)
 - [IN function](#in-function)
