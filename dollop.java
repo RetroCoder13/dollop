@@ -24,7 +24,7 @@ public class dollop {
 
     public static void function(String[] input, HashMap<String,String> variables){
         if(input[0].equals("OUT")){
-            if(input[1].equals("ADD") || input[1].equals("SUB") || input[1].equals("MUL") || input[1].equals("DIV") || input[1].equals("POW")){
+            if(input[1].equals("ADD") || input[1].equals("SUB") || input[1].equals("MUL") || input[1].equals("DIV") || input[1].equals("POW") || input[1].equals("RAND")){
                 function_out(Double.toString(function_numbers(input[2], input[3], input[1], variables)), variables);
             } else if(input[1].equals("AND") || input[1].equals("OR") || input[1].equals("NOT") || input[1].equals("EQL")){
                 if(input[1].equals("NOT")){
@@ -43,7 +43,7 @@ public class dollop {
 
         if(input[0].equals("VAR")){
             if(!(input[1].equals(input[1].toUpperCase()) && variables.get(input[1]) != null)){
-                if(input[2].equals("ADD") || input[2].equals("SUB") || input[2].equals("MUL") || input[2].equals("DIV") || input[2].equals("POW")){
+                if(input[2].equals("ADD") || input[2].equals("SUB") || input[2].equals("MUL") || input[2].equals("DIV") || input[2].equals("POW") || input[2].equals("RAND")){
                     function_var(input[1], Double.toString(function_numbers(input[3], input[4], input[2], variables)), variables);
                 } else {
                     function_var(input[1], input[2], variables);
@@ -121,8 +121,10 @@ public class dollop {
                 return function_mul(Double.parseDouble(variables.get(a)), Double.parseDouble(variables.get(b)));
             } else if(operation.equals("DIV")){
                 return function_div(Double.parseDouble(variables.get(a)), Double.parseDouble(variables.get(b)));
-            } else {
+            } else if(operation.equals("POW")){
                 return function_pow(Double.parseDouble(variables.get(a)), Double.parseDouble(variables.get(b)));
+            } else if(operation.equals("RAND")){
+                return function_rand(Double.parseDouble(variables.get(a)), Double.parseDouble(variables.get(b)));
             }
         } else if(variables.keySet().contains(a)){
             if(operation.equals("ADD")){
@@ -133,8 +135,10 @@ public class dollop {
                 return function_mul(Double.parseDouble(variables.get(a)), Double.parseDouble(b));
             } else if(operation.equals("DIV")){
                 return function_div(Double.parseDouble(variables.get(a)), Double.parseDouble(b));
-            } else {
+            } else if(operation.equals("POW")){
                 return function_pow(Double.parseDouble(variables.get(a)), Double.parseDouble(b));
+            } else if(operation.equals("RAND")){
+                return function_rand(Double.parseDouble(variables.get(a)), Double.parseDouble(b));
             }
         } else if(variables.keySet().contains(b)){
             if(operation.equals("ADD")){
@@ -145,8 +149,10 @@ public class dollop {
                 return function_mul(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
             } else if(operation.equals("DIV")){
                 return function_div(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
-            } else {
+            } else if(operation.equals("POW")){
                 return function_pow(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
+            } else if(operation.equals("POW")){
+                return function_rand(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
             }
         } else {
             if(operation.equals("ADD")){
@@ -157,10 +163,13 @@ public class dollop {
                 return function_mul(Double.parseDouble(a), Double.parseDouble(b));
             } else if(operation.equals("DIV")){
                 return function_div(Double.parseDouble(a), Double.parseDouble(b));
-            } else {
+            } else if(operation.equals("POW")){
                 return function_pow(Double.parseDouble(a), Double.parseDouble(b));
+            } else if(operation.equals("RAND")){
+                return function_rand(Double.parseDouble(a), Double.parseDouble(b));
             }
         }
+        return 0;
     }
     public static double function_add(double a, double b){
         return a+b;
@@ -176,6 +185,9 @@ public class dollop {
     }
     public static double function_pow(double a, double b){
         return Math.pow(a,b);
+    }
+    public static double function_rand(double a, double b){
+        return (int)((Math.random() * (b+1 - a)) + a);
     }
 
     public static boolean function_compare(String a, String b, String operation, HashMap<String,String> variables){
