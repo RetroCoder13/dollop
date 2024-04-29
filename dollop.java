@@ -151,7 +151,7 @@ public class dollop {
                 return function_div(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
             } else if(operation.equals("POW")){
                 return function_pow(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
-            } else if(operation.equals("POW")){
+            } else if(operation.equals("RAND")){
                 return function_rand(Double.parseDouble(a), Double.parseDouble(variables.get(b)));
             }
         } else {
