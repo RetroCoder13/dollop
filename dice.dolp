@@ -1,13 +1,28 @@
-VAR dice1 RAND 1 6
-VAR dice2 RAND 1 6
-VAR total ADD dice1 dice2
+OUT Choose how many sides the die has
+VAR diceSides IN
+IF EQL diceSides 4 GO 13
+IF EQL diceSides 6 GO 13
+IF EQL diceSides 8 GO 13
+IF EQL diceSides 10 GO 13
+IF EQL diceSides 12 GO 13
+IF EQL diceSides 20 GO 13
+IF EQL diceSides 100 GO 22
+OUT \n
+GO 1
 
-OUT Dice One: {dice1}
-OUT Dice Two: {dice2}
-OUT Total: {total}
+VAR dice RAND 1 diceSides
+OUT Dice Roll: {dice}
 OUT \n
 OUT Press enter to roll again
 OUT Press any other key and enter to exit
 VAR continue IN
 IF EQL continue  GO 1
 EXT
+
+VAR diceTens RAND 0 9
+VAR diceTens MUL diceTens 10
+VAR diceUnits RAND 0 9
+VAR total ADD diceTens diceUnits
+IF EQL total 0 VAR total 100
+OUT Dice Roll: {total}
+GO 15
