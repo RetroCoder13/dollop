@@ -26,7 +26,7 @@ public class dollop {
         if(input[0].equals("OUT")){
             if(input[1].equals("ADD") || input[1].equals("SUB") || input[1].equals("MUL") || input[1].equals("DIV") || input[1].equals("POW") || input[1].equals("RAND")){
                 function_out(Double.toString(function_numbers(input[2], input[3], input[1], variables)), variables);
-            } else if(input[1].equals("AND") || input[1].equals("OR") || input[1].equals("NOT") || input[1].equals("EQL")){
+            } else if(input[1].equals("AND") || input[1].equals("OR") || input[1].equals("NOT") || input[1].equals("EQL") || input[1].equals("GRT") || input[1].equals("LST")){
                 if(input[1].equals("NOT")){
                     function_out(Boolean.toString(function_compare(input[2], "false", input[1], variables)), variables);
                 } else {
@@ -200,6 +200,10 @@ public class dollop {
                 return function_not(Boolean.parseBoolean(variables.get(a)));
             } else if(operation.equals("EQL")){
                 return function_equals(variables.get(a).toString(), variables.get(b).toString());
+            } else if(operation.equals("GRT")){
+                return function_greaterthan(Double.parseDouble(variables.get(a).toString()), Double.parseDouble(variables.get(b).toString()));
+            } else if(operation.equals("LST")){
+                return function_lessthan(Double.parseDouble(variables.get(a).toString()), Double.parseDouble(variables.get(b).toString()));
             } else {
                 return false;
             }
@@ -212,6 +216,10 @@ public class dollop {
                 return function_not(Boolean.parseBoolean(variables.get(a)));
             } else if(operation.equals("EQL")){
                 return function_equals(variables.get(a).toString(), b.toString());
+            } else if(operation.equals("GRT")){
+                return function_greaterthan(Double.parseDouble(variables.get(a).toString()), Double.parseDouble(b));
+            } else if(operation.equals("LST")){
+                return function_lessthan(Double.parseDouble(variables.get(a).toString()), Double.parseDouble(b));
             } else {
                 return false;
             }
@@ -224,6 +232,10 @@ public class dollop {
                 return function_not(Boolean.parseBoolean(a));
             } else if(operation.equals("EQL")){
                 return function_equals(a.toString(), variables.get(b).toString());
+            } else if(operation.equals("GRT")){
+                return function_greaterthan(Double.parseDouble(a), Double.parseDouble(variables.get(b).toString()));
+            } else if(operation.equals("LST")){
+                return function_lessthan(Double.parseDouble(a), Double.parseDouble(variables.get(b).toString()));
             } else {
                 return false;
             }
@@ -236,6 +248,10 @@ public class dollop {
                 return function_not(Boolean.parseBoolean(a));
             } else if(operation.equals("EQL")){
                 return function_equals(a.toString(), b.toString());
+            } else if(operation.equals("GRT")){
+                return function_greaterthan(Double.parseDouble(a), Double.parseDouble(b));
+            } else if(operation.equals("LST")){
+                return function_lessthan(Double.parseDouble(a), Double.parseDouble(b));
             } else {
                 return false;
             }
@@ -252,6 +268,12 @@ public class dollop {
     }
     public static boolean function_equals(String a, String b){
         return a.equals(b);
+    }
+    public static boolean function_greaterthan(double a, double b){
+        return a > b;
+    }
+    public static boolean function_lessthan(double a, double b){
+        return a < b;
     }
 
     public static void function_if(String a, String b, String operation, String[] output, HashMap<String,String> variables){
