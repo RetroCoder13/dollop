@@ -20,6 +20,7 @@ If you want to run a specific file run the following command:
   - [MUL](#mul-function)
   - [DIV](#div-function)
   - [POW](#pow-function)
+  - [RAND](#rand-function)
 - [RUN function](#run-function)
 - [EXT function](#ext-function)
 - [IF function](#if-function)
@@ -27,6 +28,8 @@ If you want to run a specific file run the following command:
   - [OR](#or-function)
   - [NOT](#not-function)
   - [EQL](#eql-function)
+  - [GRT](#grt-function)
+  - [LST](#lst-function)
 - [GO function](#go-function)
 - [Looping](#looping)
 - [Example Code](#example-code)
@@ -137,6 +140,19 @@ OUT POW 1 2
 OUT POW variable 1
 ```
 
+#### RAND function
+The RAND function returns a random number between a certain range\
+It can do this with a mixture of variables and numbers
+```
+OUT RAND lower upper
+```
+```
+OUT RAND 0 1
+```
+```
+OUT RAND variable 1
+```
+
 ### RUN function
 The RUN function loads a file and runs the code inside it
 ```
@@ -198,6 +214,24 @@ IF EQL value value code
 ```
 ```
 IF EQL 1 1 OUT This code will run
+```
+
+#### GRT function
+This checks if the first value is greater than the second
+```
+IF GRT value value code
+```
+```
+IF GRT 2 1 OUT This code will run
+```
+
+#### LST function
+This checks if the first value is less than the second
+```
+IF LST value value code
+```
+```
+IF LST 0 1 OUT This code will run
 ```
 
 ### GO function
