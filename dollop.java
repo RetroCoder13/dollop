@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class dollop {
     public static int lineNumber = 0;
+    public static final String[] numberFunctions = new String[]{"ADD","SUB","MUL","DIV","POW","RAND"};
+    public static final String[] compareFunctions = new String[]{"AND","OR","NOT","EQL","GRT","LST"};
     public static void main(String args[]){
         String[] input;
         HashMap<String,String> variables = new HashMap<String,String>();
@@ -24,9 +26,9 @@ public class dollop {
 
     public static void function(String[] input, HashMap<String,String> variables){
         if(input[0].equals("OUT")){
-            if(input[1].equals("ADD") || input[1].equals("SUB") || input[1].equals("MUL") || input[1].equals("DIV") || input[1].equals("POW") || input[1].equals("RAND")){
+            if(Arrays.asList(numberFunctions).contains(input[1])){
                 function_out(Double.toString(function_numbers(input[2], input[3], input[1], variables)), variables);
-            } else if(input[1].equals("AND") || input[1].equals("OR") || input[1].equals("NOT") || input[1].equals("EQL") || input[1].equals("GRT") || input[1].equals("LST")){
+            } else if(Arrays.asList(compareFunctions).contains(input[1])){
                 if(input[1].equals("NOT")){
                     function_out(Boolean.toString(function_compare(input[2], "false", input[1], variables)), variables);
                 } else {
@@ -43,7 +45,7 @@ public class dollop {
 
         if(input[0].equals("VAR")){
             if(!(input[1].equals(input[1].toUpperCase()) && variables.get(input[1]) != null)){
-                if(input[2].equals("ADD") || input[2].equals("SUB") || input[2].equals("MUL") || input[2].equals("DIV") || input[2].equals("POW") || input[2].equals("RAND")){
+                if(Arrays.asList(numberFunctions).contains(input[2])){
                     function_var(input[1], Double.toString(function_numbers(input[3], input[4], input[2], variables)), variables);
                 } else {
                     function_var(input[1], input[2], variables);
