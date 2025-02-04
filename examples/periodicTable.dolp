@@ -1,0 +1,264 @@
+VAR element IN
+VAR val 0
+
+IF EQL element exit EXT
+IF EQL element hydrogen VAR val 1
+IF EQL element h VAR val 1
+IF EQL element helium VAR val 2
+IF EQL element he VAR val 2
+IF EQL element lithium VAR val 3
+IF EQL element li VAR val 3
+IF EQL element beryllium VAR val 4
+IF EQL element be VAR val 4
+IF EQL element boron VAR val 5
+IF EQL element b VAR val 5
+IF EQL element carbon VAR val 6
+IF EQL element c VAR val 6
+IF EQL element nitrogen VAR val 7
+IF EQL element n VAR val 7
+IF EQL element oxygen VAR val 8
+IF EQL element o VAR val 8
+IF EQL element fluorine VAR val 9
+IF EQL element f VAR val 9
+IF EQL element neon VAR val 10
+IF EQL element ne VAR val 10
+VAR val MUL val 2
+VAR val ADD val 27
+GO val
+
+OUT Hydrogen (H) \n Atomic Weight: 1.0078 \n Group: Reactive Non-Metals
+GO 1
+OUT Helium (He) \n Atomic Weight: 4.0026 \n Group: Noble Gases
+GO 1
+OUT Lithium (Li) \n Atomic Weight: 6.9410 \n Group: Alkali Metals
+GO 1
+OUT Beryllium (Be) \n Atomic Weight: 9.0122 \n Group: Alkaline Earth Metals
+GO 1
+OUT Boron (B) \n Atomic Weight: 10.811 \n Group: Metalloids
+GO 1
+OUT Carbon (C) \n Atomic Weight: 12.011 \n Group: Reactive Non-Metals
+GO 1
+OUT Nitrogen (N) \n Atomic Weight: 14.007 \n Group: Reactive Non-Metals
+GO 1
+OUT Oxygen (O) \n Atomic Weight: 15.999 \n Group: Reactive Non-Metals
+GO 1
+OUT Flourine (F) \n Atomic Weight: 18.998 \n Group: Reactive Non-Metals
+GO 1
+OUT Neon (Ne) \n Atomic Weight: 20.180 \n Group: Noble Gases
+GO 1
+OUT Sodium (Na) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Magnesium (Mg) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Aluminium (Al) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Silicon (Si) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Phosphorus (P) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Sulfur (S) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Chlorine (Cl) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Argon (Ar) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Potassium (K) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Calcium (Ca) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Scandium (Sc) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Titanium (Ti) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Vanadium (V) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Chromium (Cr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Manganese (Mn) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Iron (Fe) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Cobalt (Co) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Nickel (Ni) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Copper (Cu) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Zinc (Zn) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Gallium (Ga) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Germanium (Ge) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Arsenic (As) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Selenium (Se) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Bromine (Br) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Krypton (Kr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Rubidium (Rb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Strontium (Sr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Yttrium (Y) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Zirconium (Zr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Niobium (Nb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Molybdenum (Mo) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Technetium (Tc) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Ruthenium (Ru) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Rhodium (Rh) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Palladium (Pd) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Silver (Ag) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Cadmium (Cd) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Indium (In) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Tin (Sn) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Antimony (Sb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Tellurium (Te) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Iodine (I) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Xenon (Xe) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Caesium (Cs) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Barium (Ba) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Lanthanum (La) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Hafnium (Hf) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Tantalum (Ta) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Tungsten (W) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Rhenium (Re) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Osmium (Os) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Iridium (Ir) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Platinum (Pt) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Gold (Au) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Mercury (Hg) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Thallium (Tl) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Lead (Pb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Bismuth (Bi) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Polonium (Po) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Astatine (At) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Radon (Rn) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Francium (Fr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Radium (Ra) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Actinium (Ac) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Rutherfordium (Rf) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Dubnium (Db) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Seaborgium (Sg) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Bohrium (Bh) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Hassium (Hs) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Meitnerium (Mt) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Darmstadtium (Ds) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Roentgenium (Rg) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Copernicium (Cn) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Nihonium (Nh) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Flerovium (Fl) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Moscovium (Mc) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Livermorium (Lv) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Tennessine (Ts) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Oganesson (Og) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Cerium (Ce) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Praseodymium (Pr) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Neodymium (Nd) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Promethium (Pm) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Samarium (Sm) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Europium (Eu) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Gadolinium (Gd) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Terbium (Tb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Dysprosium (Dy) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Holmium (Ho) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Erbium (Er) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Thulium (Tm) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Ytterbium (Yb) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Lutetium (Lu) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Thorium (Th) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Protactium (Pa) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Uranium (U) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Neptunium (Np) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Plutonium (Pu) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Americium (Am) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Curium (Cm) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Berkelium (Bk) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Californium (Cf) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Einsteinium (Es) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Fermium (Fm) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Mendelevium (Md) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Nobelium (No) \n Atomic Weight:  \n Group: 
+GO 1
+OUT Lawrencium (Lr) \n Atomic Weight:  \n Group: 
+GO 1
