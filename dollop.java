@@ -97,7 +97,9 @@ public class dollop {
             System.out.print(variables.get(output.substring(1, output.length()-1)));
         } else if(output.equals("IN")){
             System.out.print(function_in());
-        } else if (output.equals("\\n")){} else {
+        } else if (output.equals("\\n")){
+            System.out.println();
+        } else {
             System.out.print(output);
         }
     }
@@ -286,7 +288,7 @@ public class dollop {
 
     public static void function_go(String newLine, HashMap<String,String> variables){
         if(variables.keySet().contains(newLine)){
-            lineNumber = Integer.parseInt(variables.get(newLine))-2;
+            lineNumber = Math.round(Float.parseFloat(variables.get(newLine)))-2;
         } else {
             lineNumber = Integer.parseInt(newLine)-2;
         }
